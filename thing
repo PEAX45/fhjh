@@ -1,6 +1,6 @@
 
-BOT_TOKEN=MTA4OTU4NTQ5NjA0NjQ1Mjc0Ng.GKhqZt.WSk6l8mHhOjzeMPV0PSQ8UQR78PZg1P4eRvqBM
-CLIENT_ID=1089585496046452746
+BOT_TOKEN=
+CLIENT_ID=
 curl -X POST \
 -H 'Content-Type: application/json' \
 -H "Authorization: Bot $BOT_TOKEN" \
