@@ -1,6 +1,6 @@
 
-BOT_TOKEN=
-CLIENT_ID=
+BOT_TOKEN=MTA4OTU4NTQ5NjA0NjQ1Mjc0Ng.GxrDam.rd_S03bIGf3nvMr3VKB23Kc5RL1CP34ydYqLe0
+CLIENT_ID=1089585496046452746
 curl -X POST \
 -H 'Content-Type: application/json' \
 -H "Authorization: Bot $BOT_TOKEN" \
@@ -99,4 +99,5 @@ async function verifySignature(request: Request): Promise<{ valid: boolean; body
 /** Converts a hexadecimal string to Uint8Array. */
 function hexToUint8Array(hex: string) {
   return new Uint8Array(hex.match(/.{1,2}/g)!.map((val) => parseInt(val, 16)))
-}
+} supabase functions deploy discord-bot --no-verify-jwt
+supabase secrets set DISCORD_PUBLIC_KEY=your_public_key
